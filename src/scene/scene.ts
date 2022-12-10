@@ -13,9 +13,9 @@ import {
   MeshLambertMaterial,
   MeshPhongMaterial,
 } from "three"
-import { renderer, updateRenderer } from "/src/core/renderer"
+import { renderer, updateRenderer } from "../core/renderer"
 
-import { gui } from "/src/core/gui"
+import { gui } from "../core/gui"
 
 export const scene = new Scene()
 
@@ -115,7 +115,7 @@ sphereCtrls.addInput(sphere.position, "z", {
   step: 0.1,
 })
 
-sphereCtrls.addInput(PARAMS, "color").on("change", (e) => {
+sphereCtrls.addInput(PARAMS, "color").on("change", (e:any) => {
   sphere.material.color = new Color(e.value)
 })
 
