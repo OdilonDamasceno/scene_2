@@ -5,15 +5,13 @@ import {
   DirectionalLight,
   Mesh,
   SphereGeometry,
-  MeshToonMaterial,
   PlaneGeometry,
   Color,
   SpotLight,
-  MeshMatcapMaterial,
   MeshLambertMaterial,
   MeshPhongMaterial,
 } from "three"
-import { renderer, updateRenderer } from "../core/renderer"
+import { updateRenderer } from "../core/renderer"
 
 import { gui } from "../core/gui"
 
